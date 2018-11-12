@@ -10,8 +10,7 @@
             "authentication": "Windows",
             "startupObjectId": 22,
             "startupObjectType": "Page",
-            "breakOnError": true
-            "port": 7049,
+            "breakOnError": true,
             "schemaUpdateMode": "Recreate"
         }
     ]
