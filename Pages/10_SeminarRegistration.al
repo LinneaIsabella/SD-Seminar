@@ -3,11 +3,13 @@ page 50110 "CSD Seminar Registration"
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 6 - Lab 3-1
     //     - Created new page
+    //   Chapter 8 - Lab 2 - 4
+    //   Added Action Navigate
+
 
     Caption = 'Seminar Registration';
-    PageType = Card;
+    PageType = Document;
     SourceTable = "CSD Seminar Reg. Header";
-    UsageCategory = tasks;
 
     layout
     {
@@ -33,7 +35,7 @@ page 50110 "CSD Seminar Registration"
                 field("Seminar Name"; "Seminar Name")
                 {
                 }
-                field("Instructor Code"; "Instructor Resource No.")
+                field("Instructor Resource No."; "Instructor Resource No.")
                 {
                 }
                 field("Instructor Name"; "Instructor Name")
@@ -58,9 +60,14 @@ page 50110 "CSD Seminar Registration"
                 {
                 }
             }
+            part(SeminarRegistrationLines; "CSD Seminar Reg. Subpage")
+            {
+                Caption = 'Lines';
+                SubPageLink = "Document No." = field ("No.");
+            }
             group("Seminar Room")
             {
-                field("Room Code"; "Room Resource No.")
+                field("Room Resource No."; "Room Resource No.")
                 {
                 }
                 field("Room Name"; "Room Name")
@@ -104,6 +111,12 @@ page 50110 "CSD Seminar Registration"
             {
                 SubPageLink = "No." = field ("Seminar No.");
             }
+            part("Customer Details FactBox"; "Customer Details FactBox")
+            {
+                Provider = SeminarRegistrationLines;
+                SubPageLink = "No." = field ("Bill-to Customer No.");
+            }
+
             systempart("Links"; Links)
             {
             }
@@ -126,7 +139,7 @@ page 50110 "CSD Seminar Registration"
                     Image = Comment;
                     RunObject = Page 50106;
                     RunPageLink = "No." = Field ("No.");
-                    RunPageView = where ("Table Name" = Const ("Seminar Registration"));
+                    RunPageView = where ("Table Name" = const("Seminar Registration"));
                 }
                 action("&Charges")
                 {
