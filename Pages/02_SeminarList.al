@@ -21,7 +21,7 @@ page 50102 "CSD Seminar List"
                 field(Name; Name)
                 {
                 }
-                field("Semination Duration"; "Semination Duration")
+                field("Seminar Duration"; "Seminar Duration")
                 {
                 }
                 field("Seminar Price"; "Seminar Price")

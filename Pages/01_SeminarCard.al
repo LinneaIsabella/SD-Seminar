@@ -29,7 +29,7 @@ page 50101 "CSD Seminar Card"
                 {
 
                 }
-                field("Semination Duration"; "Semination Duration")
+                field("Seminar Duration"; "Seminar Duration")
                 {
 
                 }

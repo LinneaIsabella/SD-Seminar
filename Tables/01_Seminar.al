@@ -25,9 +25,9 @@ table 50101 "CSD Seminar"
                     "Search Name" := Name;
             end;
         }
-        field(30; "Semination Duration"; Decimal)
+        field(30; "Seminar Duration"; Decimal)
         {
-            Caption = 'Semination Duration';
+            Caption = 'Seminar Duration';
             DecimalPlaces = 0 : 1;
         }
         field(40; "Minimum Participants"; Integer)

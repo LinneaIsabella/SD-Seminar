@@ -49,9 +49,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar - Field Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1023874429 - Field 175299073 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Semination Duration</source>
+          <source>Seminar Duration</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar - Field Semination Duration - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar - Field Seminar Duration - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1023874429 - Field 3811274366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Minimum Participants</source>

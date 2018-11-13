@@ -78,7 +78,7 @@ codeunit 50149 InstallSeminar
         Seminar.Validate("Gen. Prod. Posting Group", 'MISC');
         Seminar."Maximum Participants" := 12;
         Seminar."Minimum Participants" := 4;
-        Seminar."Semination Duration" := 5;
+        Seminar."Seminar Duration" := 5;
         Seminar."Seminar Price" := 1000;
         if Seminar.insert then;
     end;
